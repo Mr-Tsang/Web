@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  /* 在X5新内核Blink中，在排版页面的时候，会主动对字体进行放大，会检测页面中的主字体，当某一块字体在我们的判定规则中，认为字号较小，并且是页面中的主要字体，就会采取主动放大的操作。然而这不是我们想要的，可以采取给最大高度解决 */
+  max-height: 100000px;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+  max-height: 100000px;
+}
+
+*, *:before, *:after {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+	font:normal 100% "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;
+	line-height: 1.5;
+}
+.box {
+    position: relative;
+    max-width: 28rem;
+    margin: 0 auto;
+} 
+.header {
+	width:inherit;
+	height:3.125rem;
+}
+.header strong{
+	position:absolute;
+	left:4.2%;
+	top:0.7rem;
+	color:#184d9b;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+.header em{
+	position:absolute;
+	left:87.8%;
+	top:0.9rem;
+	color:#7d7d7d;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+.banner{
+	width:inherit;
+	background:-webkit-linear-gradient(left top,#696361,#5d4b3d);
+	background:-moz-linear-gradient(right bottom,#696361,#5d4b3d);
+	background:-o-linear-gradient(right bottom,#696361,#5d4b3d);
+	background:linear-gradient(to right bottom,#696361,#5d4b3d);
+}
+.banner p{
+	text-align: center;
+	font-size: 2rem;
+	padding-top:8.5rem;
+	color:#fefefe;
+}
+.banner input{
+	width:92%;
+	height:4.25rem;
+	color:#fefefe;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border:none;
+}
+.banner input:nth-of-type(1){
+	background:#184d9b;
+	margin:2rem 0 0 4.2%;
+}
+.banner input:nth-of-type(2){
+	background:transparent;
+	border:2px #d2c9c4 solid;
+	margin:0.6rem 0 7.5rem 4.2%;
+}
+.banner div{
+	width:inherit;
+	height:10rem;
+	background:-webkit-linear-gradient(left top,#6b605b,#5e4e3f);
+	background:-moz-linear-gradient(right bottom,#6b605b,#5e4e3f);
+	background:-o-linear-gradient(right bottom,#6b605b,#5e4e3f);
+	background:linear-gradient(to right bottom,#6b605b,#5e4e3f);
+}
+.main,.content_1{
+	width:inherit;
+}
+.content_1{
+	padding:0 3.2%;
+}
+/*共有属性 */
+.col1{
+	color:#194e9b;
+}
+.col2{
+	color:#6d7076;
+}
+.col3{
+	color:#5B5656;
+}
+.col4{
+	color:#9B9999;
+}
+.font-style{
+	font-style: italic;
+}
+.font1{
+	font-size: 1rem;
+}
+.font2{
+	font-size: 1.5rem;
+}
+.font3{
+	font-size: 4.75rem;
+}
+.padding-top1{
+	margin-top:4rem;
+}
+.padding-top2{
+	margin-top:3rem;
+}
+.padding-top3{
+	margin-top:2.5rem;
+}
+.font-weight{
+	font-weight: bold;
+}
+/**/
+
+
+.content_2,.content_4{
+	width:inherit;
+	padding:0 4.25%;
+	background:#d0e2f0;
+}
+.main hr{
+	width:19.2%;
+	height:0.15rem;
+	background:#184d9b;
+	border:none;
+}
+/*共有属性*/
+.content_2-img{
+	width:100%;
+}
+.main-font1{
+	font-size: 2.25rem;
+}
+.main-textalign{
+	text-align: center;
+}
+.main-color{
+	color:#184d9b;
+}
+.main-paddingTop1{
+	padding-top:5.5rem;
+}
+.content_2-paddingTop2{
+	padding-top:2.5rem;
+}
+.main-paddingTop3{
+	padding-top:2rem;
+}
+.content_2-paddingTop4{
+	padding-top:8.2rem;
+}
+.content_2-paddingTop5{
+	padding-top:1rem;
+}
+
+/**/
+.content_3{
+	width:inherit;
+	padding:0 4.25%;
+}
+/**/
+.content_3-div{
+    width:100%;
+    padding:0 9%;
+	border:0.065rem solid #eee;
+	margin-top:1.8rem;
+}
+.content_3-input{
+	width:60%;
+	height:2.8rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	border:none;
+	color:#fff;
+	background:#000;
+	margin:3.65rem 21%;
+}
+.content_3-paddingTop1{
+	padding-top:3rem;
+}
+.content_3-paddingTop2{
+	padding-top:2rem;
+}
+.content_3-paddingTop3{
+	padding-top:1.8rem;
+}
+.content_3-paddingTop4{
+	padding-top:0.9rem;
+}
+/**/
+.content_4 ul li{
+	width:100%;
+	background:#fff; 
+	margin-bottom:1.9rem;
+	padding:0 4.25%;
+}
+.content_4 ul li img{
+	width:19%;
+	height:19%;
+	border-radius: 50%;
+	margin:1rem 0 ;
+}
+.content_4-col{
+	color:#f69421;
+}
+.content_4-padding{
+	padding-top:1rem;
+}
+.content_4-pad{
+	padding:1.2rem 0 0.8rem 0;
+}
+.content_5-Input,.content_6-Input{
+	width:50%;
+	height:2.8rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	border:none;
+	color:#fff;
+	background:#184d9b;
+	margin:2rem 0 8rem 25%;
+}
+.content_5{
+	width:inherit;
+	padding:0 7%;
+}
+.content_5-li{
+	font-size:1.rem;
+	font-weight: bold;
+}
+.content_5-marginTop{
+	margin-top:2rem;
+}
+.content_6{
+	width:inherit;
+	padding:0 9%;
+	background:#184d9b;
+}
+.login{
+	width:inherit;
+	background:#d0e2f0;
+	padding:4rem 4.2% 2rem;
+}
+.login div{
+	width:100%;
+	border:0.08rem solid #ccc;
+	padding:4.3%;
+	background: #fff;
+}
+.login lable{
+	font-size:2rem;
+	font-weight: bold;
+}
+.login-input{
+	width:100%;
+}
+.login input,.login textarea{
+	line-height: 45px;
+	text-indent: 2em;
+	border:1px solid #d4d4d4;
+	box-shadow:none;
+	color:#888;
+	font-family: sans-serif;
+	margin-bottom:1rem;
+}
+.login-col{
+	color:#686b71;
+}
+.login ul li{
+	margin-bottom:2.5rem;
+	font-weight: bold;
+}
+.login span{
+	font-weight:normal;
+}
+.footer{
+	width:inherit;
+	background:#184d9b;
+	padding:3.5rem 4.2%;
+}
+.footer-span{
+	font-size: 2.1rem;
+	color:#7494c3;
+}
+.footer-spanCol{
+	color:#7494c3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
